@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Gerador de sehas, gerador password">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Gerador de Senha</title>
+</head>
+<body>
+    <img class="logo" src="./logo.png" alt="Gerador senha imagem">
+
+    <main class="countainer-input">
+
+        <span class="spn"> Tamanho <span id="valor"></span> caracteres</span>
+        <input id="slider" class="slider" type="range" min="5" max="30" value="15">
+
+
+        <button id="button" class="button-cta" onclick="generatepassword()"> Gerar senha </button>
+    </main>
+    
+    <div id="container-password" onclick="copypassword()" class="hide">
+
+        <span class="title">Sua senha gerada foi: </span>
+        <span id="password" class="password">123456</span>
+        <span class="title">Você já pode utilizar sua senha !</span>
+        <span></span>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
